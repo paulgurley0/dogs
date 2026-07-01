@@ -10,6 +10,6 @@ COPY . .
 
 RUN dos2unix run_setup.sh
 
-RUN chmod +x run_setup.sh entrypoint.sh
+RUN chmod +x run_setup.sh
 
 ENTRYPOINT ["bash"]
