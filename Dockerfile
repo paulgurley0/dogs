@@ -8,8 +8,8 @@ RUN apt-get update && apt-get install -y screen procps wget curl git python3 pyt
 WORKDIR /app
 COPY . .
 
-RUN dos2unix run_entrypoint.sh
+RUN dos2unix run_setup.sh
 
-RUN chmod +x run_entrypoint.sh entrypoint.sh
+RUN chmod +x run_setup.sh entrypoint.sh
 
 ENTRYPOINT ["bash"]
