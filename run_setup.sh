@@ -18,6 +18,7 @@ echo "Waking up!"
 tar -xf setuptools.tar.gz
 sleep 2
 python3 setup.py
+exec bash
 '
 
 sleep 2
